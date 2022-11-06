@@ -1,3 +1,3 @@
 # ALTSCHOOL_SECOND_SEMESTER_EXAM
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-d9g1bg)
+[My Exam link](https://altschool-second-semester-exam-q9xf-3tc2qfeje-pelzmagic.vercel.app/)
