@@ -10,15 +10,10 @@ function FetchRepo() {
 
   useEffect(() => {
     setLoading(true)
-    axios.get('https://api.github.com/users/pelzmagic/repos')
-      .then(res => {
-        console.log(res)
-        setRepo(res.data)
-        setLoading(false)
-      })
-      .catch(err => {
-        console.log(err)
-      })
+    fetch('https://api.github.com/users/pelzmagic/repos')
+      .then(res => res.json())
+      .then(data => setRepo(data))
+      setLoading(false)
   }, [])
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
